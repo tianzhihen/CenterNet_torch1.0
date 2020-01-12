@@ -310,8 +310,8 @@ def dla34(pretrained=True, **kwargs):  # DLA-34
     model = DLA([1, 1, 1, 2, 2, 1],
                 [16, 32, 64, 128, 256, 512],
                 block=BasicBlock, **kwargs)
-    if pretrained:
-        model.load_pretrained_model(data='imagenet', name='dla34', hash='ba72cf86')
+    #if pretrained:
+    #    model.load_pretrained_model(data='imagenet', name='dla34', hash='ba72cf86')
     return model
 
 class Identity(nn.Module):
